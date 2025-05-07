@@ -1,0 +1,570 @@
+/* Reset & Global Defaults */
+html {
+    box-sizing: border-box;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    height: 100%;
+   
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Layout */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgba(203, 255, 250, 0);
+    color: #333;
+    line-height: 1.6;
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+}
+
+main {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column; /* Forces single-column layout */
+  flex-wrap: nowrap; /* Disables wrapping */
+  gap: 2rem;
+  align-items: center; /* Optional: Centers children horizontally */
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+    margin: 1rem 0;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 700;  /* Ensures h1 is bold */
+  
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+h3 {
+    font-size: clamp(1.125rem, 2.5vw, 1.75rem);
+}
+
+p {
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    line-height: 1.6;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+}
+
+.nav-links li {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-element h2 {
+    text-align: left;
+}
+
+.project-between{
+    margin-bottom: 3rem;
+     width: 100%;    
+}
+
+
+.project-between{
+    margin-bottom: 3rem;
+     width: 100%;    
+}
+
+
+
+.between-beaubourg {
+    
+    margin-top: 0.5rem;
+    
+    width: 100%;
+    
+}
+
+.between-le-seule-risk {
+       margin-top: 2rem;
+    width: 100%;
+}
+
+.recent-between-2rem {
+    
+  margin-top: 2rem;
+     width: 100%;    
+}
+
+.recent-between-Jenetebouliearai {
+      margin-top: 0.5rem;
+     width: 100%;   
+}
+
+.bottom-space {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.recent-element {
+    max-width: 600px;  /* or your preferred max-width */
+    margin: 0 auto; /* Ensures centering horizontally */
+    text-align: center; /* Centers the content inside */
+}
+
+.recent-element img {
+    max-width: 100%;    /* Image scales according to the container */
+    height: auto;
+    display: block;
+    margin-bottom: .2rem;
+}
+
+.recent-element h3 {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    text-align: center;  /* Ensure text is centered */
+}
+
+.biographie-element img {
+    width: 600px;  /* Set the width of the image to 600px */
+    height: auto;  /* Ensure the image maintains its aspect ratio */
+    display: block; /* Prevents extra space at the bottom */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+
+.biographie-text {
+    margin-top: 0.4rem;
+    text-align: justify;
+     max-width: 600px;
+}
+
+.exposition-element {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+    .expositions-list {
+    max-width: 600px;
+    padding: 0;
+    margin-top: 0.5rem;
+    
+    
+}
+
+.expositions-list-ateliers {
+    
+    max-width: 600px;
+    padding: 0;
+    margin-top: 0.5rem;
+    
+}
+
+
+
+.list-title{
+    margin-top: 1.5rem;
+  
+    max-width: 600px;
+    padding: 0;
+}
+
+
+
+.expositions-list li, .expositions-list-ateliers li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  
+}
+.expositions-list .date {
+    min-width: 3rem;   /* Reserve space for the date */
+    flex-shrink: 0;
+     font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    line-height: 1.6;
+    }
+
+
+.expositions-list-ateliers .date {
+    min-width: 5rem;   /* Reserve space for the date */
+    flex-shrink: 0;
+    max-width: 1080px;
+     font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    line-height: 1.6;
+    }
+
+    
+    expositions-list li strong, .expositions-list-ateliers {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.recent-between, .contact-between {
+    
+    margin-top: 1rem;
+     width: 100%;    
+    
+    
+}
+
+
+   
+    .biographie-between {
+        margin-top: 0.8rem;
+         width: 100%;    
+    }
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a.active {
+    color: #848586;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #5860E9;
+    
+}
+
+
+
+img {
+   
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.contact {
+    margin-top: 1rem;
+    
+    line-height: 1.6;
+   
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;    /* centers them horizontally */
+    align-items: center;        /* centers them vertically */
+   
+   
+}
+
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-link img {
+    width: 20px;
+    height: auto;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+}
+
+.project-element-top {
+    max-width: 600px;  /* or any size you want */
+    margin: 0 auto;
+}
+
+.project-element-top img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.project-element-top h2,
+.project-element-top h3,
+.project-element-top p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+.project-element-top h3, .project-element-top h2  {
+    text-align: center;
+    line-height: 1.3;
+   
+}
+
+.project-element-top h2 {
+       font-size: clamp(2rem, 2vw, 1rem);
+    margin-bottom: .5rem;
+   
+}
+
+.project-element-top h3 {
+       font-size: clamp(1rem, 2vw, .8rem);
+
+}
+.project-element-top p {
+   
+ 
+    text-align: justify;
+    
+}
+
+.project-element-horizontal {
+    
+    display: flex;
+    align-items: stretch;
+    max-width: 600px;
+    gap: 1.2rem; 
+    margin: 0 auto; 
+
+    }
+    
+    .project-element-horizontal img {
+    width: 30%;             /* adjust this to control size */
+    height: auto;           /* keeps image proportional */
+    object-fit: cover;      /* crop if needed, optional */
+}
+
+.project-element-horizontal span {
+    display: flex;
+    align-items: center;    /* centers text vertically */
+    justify-content: center;/* optional: centers horizontally too */
+    text-align: left;     /* for multi-line text */
+}
+
+.project-element  {
+    max-width: 600px;
+      margin: 0 auto;
+    text-align: center;
+    
+}
+
+.project-element p {
+    max-width: 600px;   /* same width as .project-element */
+    margin: 0 auto;     /* center the block itself */
+    text-align: right;  /* align text content to the right */
+        line-height: 1.3;
+}
+
+
+.project-element img {
+   
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+
+    
+
+
+.image-block {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+.img-description {
+    color: gray;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin: 0;
+}
+
+.image-block .img-description {
+    text-align: right;
+}
+
+.beaubourg-delhi-work {
+    
+    margin-top: 2rem;
+}
+
+.entretien {
+    max-width: 600px;
+    text-align: center;
+     margin: 0 auto;
+    
+}
+
+.entretien-nom {
+    
+    font-weight: bold;
+}
+
+
+
+.entretien-text p {
+    margin-bottom: .5rem;
+    text-align: justify;
+    
+}
+
+.entretien-source {
+    text-align: left;
+    font-style: italic;
+}
+
+    footer {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+       
+    }
+
+
+
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    nav {
+      
+        flex-direction: column;
+        align-items: center;
+       gap: 0;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+       
+    }
+
+    .nav-links {
+        align-items: center;
+        
+    }
+    
+    h1 {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+          margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: clamp(1.25rem, 5vw, 2rem);
+    }
+    
+    .expositions-list-ateliers .date {
+    min-width: 4rem;   /* Reserve space for the date */
+        
+   
+    }
+    
+ 
+    
+        .expositions-list, #expositions-site {
+    margin-top: 0;
+}
+    
+   .expositions-list li {
+  
+    transition: color 0.3s ease;
+}
+
+.expositions-list li:hover {
+    color: #8860D0;
+   
+}
+    
+     .project-element {
+        width: 100%;         /* Allow it to be responsive */
+        max-width: 100%;     /* Remove the fixed limit so it adapts */
+        margin: 0 auto;
+    }
+
+    .project-element img {
+        width: 100%; 
+        max-width: 600px;/* Already responsive, but just to be sure */
+        height: auto;
+    }
+
+    .project-element p {
+        width: 100%;
+        max-width: 100%;     /* Let the text match the image */
+        margin: 0 auto;
+        text-align: center;  /* Optional: adjust to your taste (center/justify/left) */
+    
+    
+}
+    
+    .biographie-element {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .biographie-element img {
+        width: 100%;  /* Make the image responsive */
+        max-width: 600px; /* Limit the width */
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .biographie-text {
+        font-size: clamp(0.875rem, 3vw, 1.125rem);
+        text-align: justify;
+        margin-top: 1rem;
+        max-width: 100%;
+    }
+    
+    footer {
+        font-size: 0.5rem;
+        margin-bottom: 0.7rem;
+       
+    }
+    
+
+    }
+
