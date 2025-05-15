@@ -320,7 +320,7 @@ ul, ol {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
 }
 
 .project-element-top h2,
@@ -503,7 +503,6 @@ ul, ol {
    
     }
     
- 
     
         .expositions-list, #expositions-site {
     margin-top: 0;
@@ -513,6 +512,7 @@ ul, ol {
   
     transition: color 0.3s ease;
 }
+    
 
 .expositions-list li:hover {
     color: #8860D0;
